@@ -18,7 +18,7 @@ const GlobalStyle = createGlobalStyle`
         border: 1px solid blue;
     }
 
-    .nav-bar, .footer {
+    .nav-bar, .footer, .services, .news {
         min-height: min-content;
         width: 1420px;
         margin: 0 auto;

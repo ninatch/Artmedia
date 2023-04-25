@@ -1,10 +1,12 @@
 import React from 'react'
+import { StyledNews } from './styles/News.styled'
 
 const News = () => {
   return (
-    <div className='container'>
-        News
-    </div>
+    <StyledNews className='news'>
+        <h2>News</h2>
+        <p>scroll thingy</p>
+    </StyledNews>
   )
 }
 

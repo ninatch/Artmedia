@@ -4,6 +4,7 @@ import About from "./pages/About"
 import Landing from "./pages/Landing"
 import News from "./pages/News"
 import GlobalStyle from "./GlobalStyle"
+import Services from "./pages/Services"
 
 
 const App = () => {
@@ -13,6 +14,7 @@ const App = () => {
       <GlobalStyle />
       <NavBar />
       <Landing />
+      <Services />
       <News />
       <About />
       <Footer />
