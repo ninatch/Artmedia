@@ -8,21 +8,21 @@ const GlobalStyle = createGlobalStyle`
         margin: 0;
         padding: 0;
         font-family: 'Montserrat', sans-serif;
-        border: 1px solid red;
+        cursor: default;
     }
 
     .container {
-        min-height: 100vh;
+        height: 100%;
         width: 1420px;
         margin: 0 auto;
-        border: 1px solid blue;
+        padding: 5rem 0;
     }
 
-    .nav-bar, .footer, .services, .news {
-        min-height: min-content;
-        width: 1420px;
-        margin: 0 auto;
-        border: 1px solid blue;
+    .color-box {
+        content: '';
+        width: 100vw;
+        height: 330px;
+        background-color: #2B3252;
     }
 
 
