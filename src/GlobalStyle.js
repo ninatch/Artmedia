@@ -5,11 +5,11 @@ const GlobalStyle = createGlobalStyle`
     body, html {
         box-sizing: border-box;
         height: auto;
-        width: auto;
+        width: 100%;
         display: flex;
         justify-content: center;
         font-size: 10px;
-        min-width: 192rem;
+        /* min-width: 192rem; */
         margin: 0;
         padding: 0;
         font-family: 'Montserrat', sans-serif;
@@ -17,7 +17,7 @@ const GlobalStyle = createGlobalStyle`
     }
 
     .container {
-        width: 142rem;
+        max-width: 142rem;
     }
 
     /* @media (max-width: 480px) {
