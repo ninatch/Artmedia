@@ -60,7 +60,7 @@ const Slider = () => {
           navigation
         >
         {newsArray.map(news => (   
-          <SwiperSlide>
+          <SwiperSlide key={news.image}>
             <div className='overlay'></div>
             <img src={news.image}></img>
             <div className='news-content'>
