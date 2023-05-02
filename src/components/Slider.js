@@ -62,7 +62,7 @@ const Slider = () => {
         {newsArray.map(news => (   
           <SwiperSlide key={news.image}>
             <div className='overlay'></div>
-            <img src={news.image}></img>
+            <img src={news.image} alt='news-image'></img>
             <div className='news-content'>
               <h2>{news.heading}</h2>
               <p>{news.date}</p>
