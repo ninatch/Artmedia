@@ -17,7 +17,7 @@ const NavBar = () => {
     return (
         <StyledNavBar className='nav-bar'>
 
-            <div className='logo-items'>
+            <div className='logo-container'>
                 <img src={Logo} alt='logo'/>
                 <p>Company Name</p>
             </div>

@@ -1,34 +1,39 @@
 import styled from 'styled-components'
 
 export const StyledNavBar = styled.div`
-    height: 180px;
-    width: 1420px;
+    width: 142rem;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     align-self: center;
-    margin: 0 auto;
+    margin: 5rem auto;
     background-color: #fff;
 
-    .logo-items, .menu-items, .search-items {
+    p {
+        padding: 0;
+        margin: 0;
+        align-self: center;
+    }
+
+    .logo-container, .menu-items, .search-items {
         display: flex;
         flex-direction: row;
-        gap: 25px;
+        gap: 2.5rem;
     }
 
     input {
         font-family: 'Montserrat', sans-serif;
         border: none;
-        border-bottom: 1px solid #EAECF0;
-        padding-bottom: 11px;
-        padding-right: 50px;
+        border-bottom: .1rem solid #EAECF0;
+        padding-bottom: 1.1rem;
+        padding-right: 5rem;
         color: #2B3252;
     }
 
     input:focus {
         outline: none;
-        border-bottom: 1px solid #EF5555;
+        border-bottom: .1rem solid #EF5555;
     }
 
     button {
@@ -40,30 +45,29 @@ export const StyledNavBar = styled.div`
         position: absolute;
         top: 0;
         right: 0;
-        height: 100%;
         display: flex;
     }
 
     input::placeholder {
         font-weight: 400;
-        font-size: 14px;
+        font-size: 1.4rem;
         color: #2B3252;
     }
 
-    .logo-items p {
+    .logo-container p {
         font-weight: 700;
-        font-size: 22px;
-        line-height: 27px;
+        font-size: 2.2rem;
+        line-height: 2.7rem;
         text-transform: uppercase;
         color: #2B3252;
-        max-width: 120px;
+        max-width: 12rem;
     }
 
     .menu-items p {
         font-weight: 700;
-        font-size: 18px;
+        font-size: 1.8rem;
         color: #2B3252;
-        padding: 25px;
+        padding: 2.5rem;
     }
 
     .search-items {

@@ -23,10 +23,9 @@ const Footer = () => {
   }
 
   return (
-    <div className='color-box'>
       <StyledFooter>
 
-        <div className='logo-items'>
+        <div className='logo-container'>
           <div className='logo'>
             <img src={LogoBW} alt='company logo'/>
             <p>Company Name</p>
@@ -34,7 +33,7 @@ const Footer = () => {
           <p>&copy; 2023 All Rights Reserved</p>
         </div>
 
-        <div className='menu-and-socials'>
+        <div className='menu-socials-container'>
           <div className='menu'>
             <p>Services</p>
             <p>Projects</p>
@@ -47,7 +46,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <form className='contact-form'>
+        <form className='contact-container'>
           <input type='text' name='name' value={contactInfo.name} onChange={handleChange} placeholder='Name' className='input-name'/>
           <input type='email' name='email' value={contactInfo.email} onChange={handleChange} placeholder='Email' className='input-email'/>
           <div className='input-text-wrapper'>
@@ -57,7 +56,6 @@ const Footer = () => {
         </form>
 
       </StyledFooter>
-    </div>
   )
 }
 

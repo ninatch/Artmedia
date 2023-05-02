@@ -1,22 +1,22 @@
 import styled from 'styled-components'
 
 export const StyledFooter = styled.div`
-    height: 330px;
-    width: 1420px;
+    min-width: 142rem;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #2B3252;
+    justify-content: center;
     color: #fff;
     padding: 0;
     margin: 0 auto;
+    max-height: 33rem;
+    position: relative;
+    background-color: #2B3252;
 
-    .logo-items, .menu-and-socials, .logo, .menu, .socials {
+    .menu-socials-container, .logo, .menu, .socials {
         display: flex;
     }
 
-    .logo-items, .menu-and-socials {
+    .menu-socials-container {
         flex-direction: column;
     }
 
@@ -24,63 +24,85 @@ export const StyledFooter = styled.div`
         flex-direction: row;
     }
 
-    .logo-items {
-        gap: 36px;
+    .logo-container {
+        margin: 10rem 15.3rem 16.2rem 0;
     }
     
-    .logo-items > p {
+    .logo-container > p {
         font-weight: 400;
-        font-size: 16px;
+        font-size: 1.6rem;
         color: #fff;
         opacity: 0.7;
-        margin: 0;
+        margin: 3.6rem 0 0 0;
+        padding: 0;
     }
     
     .logo {
-        gap: 26px;
+        gap: 2.6rem;
     }
-
-    .logo p {
-        max-width: 54px;
+    
+    .logo > p {
+        max-width: 5.4rem;
         font-weight: 700;
-        font-size: 22px;
-        line-height: 27px;
+        font-size: 2.2rem;
+        line-height: 2.7rem;
         text-transform: uppercase;
-        color: #fff;
+        margin: .7rem 0;
     }
 
-    .menu-and-socials {
-        gap: 42px;
+    .logo img {
+        height: 6.153rem;
+        width: 6.8rem;
+    }
+
+    .menu-socials-container {
+        margin: 10.9rem 13.9rem 19.9rem 0;
+        gap: 4.2rem;
     }
 
     .menu {
-        gap: 50px;
+        gap: 5rem;
     }
 
-    .menu p {
+    .menu > p {
         margin: 0;
         padding: 0;
         font-weight: 700;
-        font-size: 18px;
-        color: #fff;
+        font-size: 1.8rem;
     }
 
     .socials {
-        gap: 18px;
+        gap: 1.8rem;
     }
 
-    .socials img {
+    .socials > img {
+        width: 3.201rem;
+        height: 3.201rem;
         cursor: pointer;
     }
 
-    .contact-form {
+    .contact-container {
+        margin: 8rem 0 20.8rem 0;
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 2fr;
-        grid-gap: 20px;
-        grid-template-areas: 
-            'n e'
-            't t'
+        grid-template-columns: 23rem 23rem;
+        grid-template-rows: 4.2rem 12rem;
+        grid-gap: 2rem;
+        grid-template-areas:
+        'n e'
+        't t'
+    }
+    
+    input {
+        padding: 1.1rem 0 1.4rem 0;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.4rem;
+        font-weight: 400;
+        opacity: 0.7;
+        text-shadow: 0 .4rem .4rem rgba(0, 0, 0, 0.25);
+        text-indent: 2rem;
+        background: none;
+        border: .1rem solid rgba(255, 255, 255, 0.3);
+        border-radius: .8rem;
     }
 
     .input-name {
@@ -100,29 +122,17 @@ export const StyledFooter = styled.div`
 
     .form-btn {
         position: absolute;
-        right: 20px;
-        bottom: 20px;
+        right: 2rem;
+        bottom: 2rem;
         background-color: #EF5555;
-        height: 42px;
-        width: 74px;
+        height: 4.2rem;
+        width: 7.4rem;
         border: none;
-        border-radius: 8px;
+        border-radius: .8rem;
         color: #fff;
-        font-size: 14px;
+        font-size: 1.4rem;
         font-weight: 700;
         cursor: pointer;
     }
 
-    input {
-        font-family: 'Montserrat', sans-serif;
-        font-size: 14px;
-        font-weight: 400;
-        color: #fff;
-        opacity: 70%;
-        background: none;
-        border: 1px solid rgba(255, 255, 255, 0.3);
-        border-radius: 8px;
-        text-indent: 20px;
-        padding: 11px 0 14px 0;
-    }
 `
